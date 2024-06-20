@@ -1,10 +1,13 @@
 # haionnet
-sophos에서 로그 파일을 다운로드 받는다. ( 본사 = firewall log, 서버용 = firewall log + waf log)
-backup 파일을 생성 및 다운로드
-로우파일까지 전부 압축해제 -> 기존 알집으로 된 파일들 전부 삭제(.log파일만 남긴다.)
-그 뒤에 올바른 경로를 대상으로 1 -> 2 -> 3 -> modify가 없는 일반 xlsl 파일 삭제 -> 4 -> transname_ver1 실행
+1. sophos에서 로그 파일을 다운로드 받는다. ( 본사 = firewall log, 서버용 = firewall log + waf log)
+2. backup 파일을 생성 및 다운로드
+3. 로우파일까지 전부 압축해제 -> 기존 알집으로 된 파일들 전부 삭제(.log파일만 남긴다.)
+4. 그 뒤에 올바른 경로를 대상으로 1 -> 2 -> 3 -> modify가 없는 일반 xlsl 파일 삭제 -> 4 -> transname_ver1 실행
+
 
 python의 경우 venv 가상환경을 통해서 셋업했고 버전은 3.10.2
+
+
 
 해당 코드들을 통해 이루어져야 하는 작업 프로세스는 아래와 같음
 
